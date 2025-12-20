@@ -73,6 +73,14 @@
             <!-- 第三部分：队伍人员 -->
             <div class="snow-section">
                 <h3>3. 队伍人员</h3>
+                <div class="team-images">
+                    <div class="image-container">
+                        <img src="snow-team-image1.jpg" alt="队伍人员1" class="main-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="snow-team-image2.jpg" alt="队伍人员2" class="main-image">
+                    </div>
+                </div>
             </div>
             
             <!-- 第四部分：如何除雪 -->
@@ -150,6 +158,12 @@
             color: #6c757d;
             margin-bottom: 8px;
             line-height: 1.4;
+        }
+        
+        .team-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
     </style>
 
