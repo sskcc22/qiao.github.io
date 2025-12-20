@@ -45,6 +45,29 @@
             <!-- 第二部分：工具储备 -->
             <div class="snow-section">
                 <h3>2. 工具储备</h3>
+                <div class="tools-container">
+                    <div class="tools-item">
+                        <h4>下发作业场前部道岔所需机具：</h4>
+                        <ul>
+                            <li>道岔除雪小铁铲10把；</li>
+                            <li>笤帚（平头）10把；</li>
+                            <li>方形铁锹 1 把；</li>
+                            <li>燃油喷灯 2 台；</li>
+                            <li>风力除雪机2台；</li>
+                            <li>对讲机4台；</li>
+                            <li>手电筒8把。</li>
+                        </ul>
+                    </div>
+                    <div class="tools-item">
+                        <h4>站修作业场库北道岔所需机具：</h4>
+                        <ul>
+                            <li>道岔除雪小铁铲1把；</li>
+                            <li>笤帚（平头）1把；</li>
+                            <li>对讲机2台；</li>
+                            <li>手电筒3把；</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             
             <!-- 第三部分：队伍人员 -->
@@ -100,6 +123,33 @@
             max-height: 90vh;
             object-fit: contain;
             border-radius: 4px;
+        }
+        
+        .tools-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .tools-item {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .tools-item h4 {
+            color: #495057;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .tools-item ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+        .tools-item li {
+            color: #6c757d;
+            margin-bottom: 8px;
+            line-height: 1.4;
         }
     </style>
 
