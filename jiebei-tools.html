@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>携带工具 - 解备作业系统</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .main-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,139 +30,13 @@
     <main>
         <section id="tools">
             <h2>携带工具</h2>
-            
-            <div class="content-section">
-                <h3>必备工具清单</h3>
-                <p>请确保作业前携带以下所有工具，并进行检查确认。</p>
-                
-                <div class="tools-list">
-                    <table class="tools-table">
-                        <thead>
-                            <tr>
-                                <th>序号</th>
-                                <th>工具名称</th>
-                                <th>规格型号</th>
-                                <th>数量</th>
-                                <th>检查状态</th>
-                                <th>备注</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>绝缘手套</td>
-                                <td>220kV</td>
-                                <td>2副</td>
-                                <td>□ 已检查</td>
-                                <td>需定期检测</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>绝缘靴</td>
-                                <td>220kV</td>
-                                <td>2双</td>
-                                <td>□ 已检查</td>
-                                <td>需定期检测</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>验电器</td>
-                                <td>220kV</td>
-                                <td>1个</td>
-                                <td>□ 已检查</td>
-                                <td>需定期检测</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>接地线</td>
-                                <td>220kV</td>
-                                <td>3组</td>
-                                <td>□ 已检查</td>
-                                <td>确保无破损</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>操作杆</td>
-                                <td>5m</td>
-                                <td>1根</td>
-                                <td>□ 已检查</td>
-                                <td>绝缘部分完好</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>万用表</td>
-                                <td>数字式</td>
-                                <td>1个</td>
-                                <td>□ 已检查</td>
-                                <td>电池充足</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>手电筒</td>
-                                <td>强光</td>
-                                <td>2个</td>
-                                <td>□ 已检查</td>
-                                <td>电池充足</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>工具箱</td>
-                                <td>标准型</td>
-                                <td>1个</td>
-                                <td>□ 已检查</td>
-                                <td>完好无损</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            
-            <div class="content-section">
-                <h3>工具检查记录</h3>
-                
-                <form class="tool-check-form">
-                    <div class="form-group">
-                        <label for="checker">检查人：</label>
-                        <input type="text" id="checker" name="checker" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="check-date">检查日期：</label>
-                        <input type="date" id="check-date" name="check-date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="check-time">检查时间：</label>
-                        <input type="time" id="check-time" name="check-time" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="check-notes">检查备注：</label>
-                        <textarea id="check-notes" name="check-notes" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn">提交检查记录</button>
-                </form>
-            </div>
-            
-            <!-- 返回按钮 -->
-            <div class="button-group">
-                <a href="jiebei.html" class="btn btn-back">返回解备作业</a>
-            </div>
+            <!-- 主图片 -->
+            <img src="tools-main.jpg" alt="携带工具" class="main-image">
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 解备作业系统. 保留所有权利.</p>
     </footer>
-
-    <script>
-        // 简单的表单处理
-        window.onload = function() {
-            var form = document.querySelector('.tool-check-form');
-            if (form) {
-                form.onsubmit = function() {
-                    alert('工具检查记录已提交！');
-                    return false;
-                };
-            }
-        };
-    </script>
 </body>
 </html>
