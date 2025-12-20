@@ -22,9 +22,86 @@
     <main>
         <section id="snow-removal">
             <h2>除雪工作</h2>
-            <p>除雪作业相关内容将在此页面展示</p>
+            
+            <!-- 第一部分：线路图 -->
+            <div class="snow-section">
+                <h3>1. 线路图</h3>
+                <div class="sub-sections">
+                    <div class="sub-section-item">
+                        <h4>下发</h4>
+                        <div class="image-container">
+                            <img src="snow-map-xiafa.jpg" alt="下发线路图" class="main-image">
+                        </div>
+                    </div>
+                    <div class="sub-section-item">
+                        <h4>站修</h4>
+                        <div class="image-container">
+                            <img src="snow-map-zhanxiu.jpg" alt="站修线路图" class="main-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 第二部分：工具储备 -->
+            <div class="snow-section">
+                <h3>2. 工具储备</h3>
+            </div>
+            
+            <!-- 第三部分：队伍人员 -->
+            <div class="snow-section">
+                <h3>3. 队伍人员</h3>
+            </div>
+            
+            <!-- 第四部分：如何除雪 -->
+            <div class="snow-section">
+                <h3>4. 如何除雪</h3>
+            </div>
+            
+            <!-- 第五部分：销记工作 -->
+            <div class="snow-section">
+                <h3>5. 销记工作</h3>
+            </div>
         </section>
     </main>
+    
+    <style>
+        .snow-section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        .snow-section h3 {
+            color: #343a40;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .sub-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .sub-section-item {
+            text-align: center;
+        }
+        .sub-section-item h4 {
+            color: #495057;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .main-image {
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+    </style>
 
     <footer>
         <p>&copy; 2024 作业系统. 保留所有权利.</p>
