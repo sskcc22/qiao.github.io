@@ -27,13 +27,15 @@
             <div class="snow-section">
                 <h3>1. 线路图</h3>
                 <div class="sub-sections">
-                    <div class="sub-section-item">
-                        <h4>下发</h4>
-                        <a href="snow-map-xiafa-detail.html" class="tool-btn">查看线路图</a>
+                    <div class="location-item">
+                        <h4>1.1 下发</h4>
+                        <p>查看下发线路图</p>
+                        <a href="snow-map-xiafa-detail.html" class="btn">查看图片</a>
                     </div>
-                    <div class="sub-section-item">
-                        <h4>站修</h4>
-                        <a href="snow-map-zhanxiu-detail.html" class="tool-btn">查看线路图</a>
+                    <div class="location-item">
+                        <h4>1.2 站修</h4>
+                        <p>查看站修线路图</p>
+                        <a href="snow-map-zhanxiu-detail.html" class="btn">查看图片</a>
                     </div>
                 </div>
             </div>
@@ -69,9 +71,11 @@
             <!-- 第三部分：队伍人员 -->
             <div class="snow-section">
                 <h3>3. 队伍人员</h3>
-                <div class="team-images">
-                    <div class="team-image-item">
-                        <a href="snow-team-combined.html" class="tool-btn">查看队伍人员图片</a>
+                <div class="sub-sections">
+                    <div class="location-item">
+                        <h4>3.1 队伍人员</h4>
+                        <p>查看队伍人员图片</p>
+                        <a href="snow-team-combined.html" class="btn">查看图片</a>
                     </div>
                 </div>
             </div>
@@ -79,9 +83,11 @@
             <!-- 第四部分：如何除雪 -->
             <div class="snow-section">
                 <h3>4. 如何除雪</h3>
-                <div class="snow-steps-images">
-                    <div class="step-image-item">
-                        <a href="snow-steps-combined.html" class="tool-btn">查看除雪步骤图片</a>
+                <div class="sub-sections">
+                    <div class="location-item">
+                        <h4>4.1 除雪步骤</h4>
+                        <p>查看除雪步骤图片</p>
+                        <a href="snow-steps-combined.html" class="btn">查看图片</a>
                     </div>
                 </div>
             </div>
@@ -89,9 +95,11 @@
             <!-- 第五部分：销记工作 -->
             <div class="snow-section">
                 <h3>5. 销记工作</h3>
-                <div class="snow-register-images">
-                    <div class="register-image-item">
-                        <a href="snow-register-combined.html" class="tool-btn">查看销记工作图片</a>
+                <div class="sub-sections">
+                    <div class="location-item">
+                        <h4>5.1 销记工作</h4>
+                        <p>查看销记工作图片</p>
+                        <a href="snow-register-combined.html" class="btn">查看图片</a>
                     </div>
                 </div>
             </div>
@@ -115,13 +123,35 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
-        .sub-section-item {
+        .location-item {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
             text-align: center;
         }
-        .sub-section-item h4 {
-            color: #495057;
-            margin-bottom: 15px;
+        .location-item h4 {
+            color: #343a40;
+            margin-bottom: 10px;
             font-size: 18px;
+        }
+        .location-item p {
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
         }
         .image-container {
             display: flex;
@@ -161,47 +191,6 @@
             color: #6c757d;
             margin-bottom: 8px;
             line-height: 1.4;
-        }
-        
-        .team-images {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        
-        .snow-steps-images {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        
-        .snow-register-images {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        
-        /* 按钮和图片控制样式 */
-        .tool-btn {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-        
-        .tool-btn:hover {
-            background-color: #0056b3;
-        }
-        
-        /* 确保按钮容器的样式一致 */
-        .team-image-item,
-        .step-image-item,
-        .register-image-item {
-            text-align: center;
         }
     </style>
     
