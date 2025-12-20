@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>销记工作 - 解备作业系统</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .main-image {
+            display: block;
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,129 +37,12 @@
         <section id="register">
             <h2>销记工作</h2>
             
-            <div class="content-section">
-                <h3>销记说明</h3>
-                <p>作业完成后，请填写以下销记信息，确认所有工作已完成并符合安全要求。</p>
-            </div>
-            
-            <div class="content-section">
-                <h3>销记记录表单</h3>
+            <div class="image-container">
+                <!-- 第一张图片 -->
+                <img src="register-image1.jpg" alt="销记工作图片1" class="main-image">
                 
-                <form class="register-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="work-order">工作票编号：</label>
-                            <input type="text" id="work-order" name="work-order" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="work-date">作业日期：</label>
-                            <input type="date" id="work-date" name="work-date" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="start-time">开始时间：</label>
-                            <input type="time" id="start-time" name="start-time" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="end-time">结束时间：</label>
-                            <input type="time" id="end-time" name="end-time" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="workers">作业人员：</label>
-                        <input type="text" id="workers" name="workers" required placeholder="请输入所有作业人员姓名，用逗号分隔">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="work-content">作业内容：</label>
-                        <textarea id="work-content" name="work-content" rows="4" required placeholder="请详细描述本次作业内容"></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>作业完成情况：</label>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox" name="completed" value="all" required> 所有工作已完成</label>
-                            <label><input type="checkbox" name="completed" value="safety" required> 安全措施已全部解除</label>
-                            <label><input type="checkbox" name="completed" value="tools" required> 工具已全部收回</label>
-                            <label><input type="checkbox" name="completed" value="clean" required> 现场已清理干净</label>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="problems">遗留问题：</label>
-                        <textarea id="problems" name="problems" rows="3" placeholder="如有遗留问题，请详细说明"></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="notes">备注：</label>
-                        <textarea id="notes" name="notes" rows="2" placeholder="其他需要说明的事项"></textarea>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="operator">操作人员签名：</label>
-                            <input type="text" id="operator" name="operator" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="supervisor">负责人签名：</label>
-                            <input type="text" id="supervisor" name="supervisor" required>
-                        </div>
-                    </div>
-                    
-                    <div class="button-group">
-                        <button type="submit" class="btn">提交销记</button>
-                        <button type="reset" class="btn btn-secondary">重置表单</button>
-                    </div>
-                </form>
-            </div>
-            
-            <div class="content-section">
-                <h3>销记历史记录</h3>
-                
-                <div class="register-history">
-                    <table class="history-table">
-                        <thead>
-                            <tr>
-                                <th>序号</th>
-                                <th>工作票编号</th>
-                                <th>作业日期</th>
-                                <th>操作人员</th>
-                                <th>状态</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>WB-2024-0501</td>
-                                <td>2024-05-01</td>
-                                <td>张三、李四</td>
-                                <td>已完成</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>WB-2024-0428</td>
-                                <td>2024-04-28</td>
-                                <td>王五、赵六</td>
-                                <td>已完成</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>WB-2024-0425</td>
-                                <td>2024-04-25</td>
-                                <td>孙七、周八</td>
-                                <td>已完成</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            
-            <!-- 返回按钮 -->
-            <div class="button-group">
-                <a href="jiebei.html" class="btn btn-back">返回解备作业</a>
+                <!-- 第二张图片 -->
+                <img src="register-image2.jpg" alt="销记工作图片2" class="main-image">
             </div>
         </section>
     </main>
@@ -152,18 +50,5 @@
     <footer>
         <p>&copy; 2024 解备作业系统. 保留所有权利.</p>
     </footer>
-
-    <script>
-        // 简单的表单处理
-        window.onload = function() {
-            var form = document.querySelector('.register-form');
-            if (form) {
-                form.onsubmit = function() {
-                    alert('销记记录已提交！');
-                    return false;
-                };
-            }
-        };
-    </script>
 </body>
 </html>
