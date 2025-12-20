@@ -29,17 +29,11 @@
                 <div class="sub-sections">
                     <div class="sub-section-item">
                         <h4>下发</h4>
-                        <button class="tool-btn" onclick="toggleImage(this)">查看</button>
-                        <div class="image-container hidden">
-                            <img src="snow-map-xiafa.jpg" alt="下发线路图" class="main-image">
-                        </div>
+                        <a href="snow-map-xiafa-detail.html" class="tool-btn">查看线路图</a>
                     </div>
                     <div class="sub-section-item">
                         <h4>站修</h4>
-                        <button class="tool-btn" onclick="toggleImage(this)">查看</button>
-                        <div class="image-container hidden">
-                            <img src="snow-map-zhanxiu.jpg" alt="站修线路图" class="main-image">
-                        </div>
+                        <a href="snow-map-zhanxiu-detail.html" class="tool-btn">查看线路图</a>
                     </div>
                 </div>
             </div>
@@ -77,16 +71,10 @@
                 <h3>3. 队伍人员</h3>
                 <div class="team-images">
                     <div class="team-image-item">
-                        <button class="tool-btn" onclick="toggleImage(this)">查看图片1</button>
-                        <div class="image-container hidden">
-                            <img src="snow-team-image1.jpg" alt="队伍人员1" class="main-image">
-                        </div>
+                        <a href="snow-team-image1-detail.html" class="tool-btn">查看图片1</a>
                     </div>
                     <div class="team-image-item">
-                        <button class="tool-btn" onclick="toggleImage(this)">查看图片2</button>
-                        <div class="image-container hidden">
-                            <img src="snow-team-image2.jpg" alt="队伍人员2" class="main-image">
-                        </div>
+                        <a href="snow-team-image2-detail.html" class="tool-btn">查看图片2</a>
                     </div>
                 </div>
             </div>
@@ -96,22 +84,13 @@
                 <h3>4. 如何除雪</h3>
                 <div class="snow-steps-images">
                     <div class="step-image-item">
-                        <button class="tool-btn" onclick="toggleImage(this)">查看步骤1</button>
-                        <div class="image-container hidden">
-                            <img src="snow-steps-image1.jpg" alt="除雪步骤1" class="main-image">
-                        </div>
+                        <a href="snow-steps-image1-detail.html" class="tool-btn">查看步骤1</a>
                     </div>
                     <div class="step-image-item">
-                        <button class="tool-btn" onclick="toggleImage(this)">查看步骤2</button>
-                        <div class="image-container hidden">
-                            <img src="snow-steps-image2.jpg" alt="除雪步骤2" class="main-image">
-                        </div>
+                        <a href="snow-steps-image2-detail.html" class="tool-btn">查看步骤2</a>
                     </div>
                     <div class="step-image-item">
-                        <button class="tool-btn" onclick="toggleImage(this)">查看步骤3</button>
-                        <div class="image-container hidden">
-                            <img src="snow-steps-image3.jpg" alt="除雪步骤3" class="main-image">
-                        </div>
+                        <a href="snow-steps-image3-detail.html" class="tool-btn">查看步骤3</a>
                     </div>
                 </div>
             </div>
@@ -121,16 +100,10 @@
                 <h3>5. 销记工作</h3>
                 <div class="snow-register-images">
                     <div class="register-image-item">
-                        <button class="tool-btn" onclick="toggleImage(this)">查看图片1</button>
-                        <div class="image-container hidden">
-                            <img src="register-image1.jpg" alt="销记工作图片1" class="main-image">
-                        </div>
+                        <a href="register-image1-detail.html" class="tool-btn">查看图片1</a>
                     </div>
                     <div class="register-image-item">
-                        <button class="tool-btn" onclick="toggleImage(this)">查看图片2</button>
-                        <div class="image-container hidden">
-                            <img src="register-image2.jpg" alt="销记工作图片2" class="main-image">
-                        </div>
+                        <a href="register-image2-detail.html" class="tool-btn">查看图片2</a>
                     </div>
                 </div>
             </div>
@@ -236,11 +209,7 @@
             background-color: #0056b3;
         }
         
-        .hidden {
-            display: none;
-        }
-        
-        /* 确保图片容器的样式一致 */
+        /* 确保按钮容器的样式一致 */
         .team-image-item,
         .step-image-item,
         .register-image-item {
@@ -248,13 +217,7 @@
         }
     </style>
     
-    <script>
-        function toggleImage(btn) {
-            const imageContainer = btn.nextElementSibling;
-            imageContainer.classList.toggle('hidden');
-            btn.textContent = imageContainer.classList.contains('hidden') ? '查看' : '隐藏';
-        }
-    </script>
+
 
     <footer>
         <p>&copy; 2024 作业系统. 保留所有权利.</p>
