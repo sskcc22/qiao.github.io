@@ -86,11 +86,30 @@
             <!-- 第四部分：如何除雪 -->
             <div class="snow-section">
                 <h3>4. 如何除雪</h3>
+                <div class="snow-steps-images">
+                    <div class="image-container">
+                        <img src="snow-steps-image1.jpg" alt="除雪步骤1" class="main-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="snow-steps-image2.jpg" alt="除雪步骤2" class="main-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="snow-steps-image3.jpg" alt="除雪步骤3" class="main-image">
+                    </div>
+                </div>
             </div>
             
             <!-- 第五部分：销记工作 -->
             <div class="snow-section">
                 <h3>5. 销记工作</h3>
+                <div class="snow-register-images">
+                    <div class="image-container">
+                        <img src="register-image1.jpg" alt="销记工作图片1" class="main-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="register-image2.jpg" alt="销记工作图片2" class="main-image">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -161,6 +180,18 @@
         }
         
         .team-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .snow-steps-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .snow-register-images {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
